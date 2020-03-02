@@ -4,22 +4,7 @@ class MyArray {
     }
 
     insertAt(index, value) {
-        var newArray = [];
-        
-        //Copy everything before
-        for(var i = 0; i < index; i++) {
-            newArray[i] = this._array[i];
-        } 
 
-        //Insert the new value
-        newArray[index] = value;
-
-        //Copy everything after
-        for(i = index + 1; i < this._array.length + 1; i++) {
-            newArray[i] = this._array[i - 1];
-        } 
-        
-        this._array = newArray;
     }
 
     // Removes element at the given index. 
